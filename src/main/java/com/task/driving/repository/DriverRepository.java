@@ -1,6 +1,6 @@
-package com.test.driverstudenttask.driving.repository;
+package com.task.driving.repository;
 
-import com.test.driverstudenttask.driving.model.entity.Driver;
+import com.task.driving.model.entity.Driver;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

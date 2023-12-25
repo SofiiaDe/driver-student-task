@@ -1,7 +1,7 @@
-package com.test.driverstudenttask.driving.model;
+package com.task.driving.model;
 
-import com.test.driverstudenttask.driving.controller.DriverController;
-import com.test.driverstudenttask.driving.model.dto.DriverDto;
+import com.task.driving.controller.DriverController;
+import com.task.driving.model.dto.DriverDto;
 import org.springframework.hateoas.EntityModel;
 import org.springframework.hateoas.server.RepresentationModelAssembler;
 import org.springframework.stereotype.Component;

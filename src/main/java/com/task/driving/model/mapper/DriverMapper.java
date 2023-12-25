@@ -1,7 +1,7 @@
-package com.test.driverstudenttask.driving.model.mapper;
+package com.task.driving.model.mapper;
 
-import com.test.driverstudenttask.driving.model.dto.DriverDto;
-import com.test.driverstudenttask.driving.model.entity.Driver;
+import com.task.driving.model.dto.DriverDto;
+import com.task.driving.model.entity.Driver;
 import org.mapstruct.Mapper;
 import org.springframework.stereotype.Component;
 

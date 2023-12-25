@@ -1,4 +1,4 @@
-package com.test.driverstudenttask.driving.model.payload;
+package com.task.driving.model.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -9,8 +9,9 @@ import lombok.NoArgsConstructor;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class CreateDriverRequest {
+public class DriverDto {
 
+    private Long id;
     private String name;
     private Integer age;
 

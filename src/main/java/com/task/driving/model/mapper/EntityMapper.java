@@ -1,4 +1,4 @@
-package com.test.driverstudenttask.driving.model.mapper;
+package com.task.driving.model.mapper;
 
 public interface EntityMapper<D, E> {
 

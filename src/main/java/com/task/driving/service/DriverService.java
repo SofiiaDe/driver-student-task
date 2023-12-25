@@ -1,8 +1,8 @@
-package com.test.driverstudenttask.driving.service;
+package com.task.driving.service;
 
-import com.test.driverstudenttask.driving.model.dto.DriverDto;
-import com.test.driverstudenttask.driving.model.payload.CreateDriverRequest;
-import com.test.driverstudenttask.driving.model.payload.UpdateDriverRequest;
+import com.task.driving.model.payload.CreateDriverRequest;
+import com.task.driving.model.dto.DriverDto;
+import com.task.driving.model.payload.UpdateDriverRequest;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 

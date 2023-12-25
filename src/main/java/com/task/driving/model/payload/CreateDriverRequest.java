@@ -1,4 +1,4 @@
-package com.test.driverstudenttask.driving.model.payload;
+package com.task.driving.model.payload;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class UpdateDriverRequest {
+public class CreateDriverRequest {
 
     private String name;
     private Integer age;

@@ -1,4 +1,4 @@
-package com.test.driverstudenttask.driving.exception;
+package com.task.driving.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;

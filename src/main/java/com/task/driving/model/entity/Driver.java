@@ -1,4 +1,4 @@
-package com.test.driverstudenttask.driving.model.entity;
+package com.task.driving.model.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

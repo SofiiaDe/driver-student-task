@@ -1,10 +1,10 @@
-package com.test.driverstudenttask.driving.controller;
+package com.task.driving.controller;
 
-import com.test.driverstudenttask.driving.model.DriverModelAssembler;
-import com.test.driverstudenttask.driving.model.dto.DriverDto;
-import com.test.driverstudenttask.driving.model.payload.CreateDriverRequest;
-import com.test.driverstudenttask.driving.model.payload.UpdateDriverRequest;
-import com.test.driverstudenttask.driving.service.DriverService;
+import com.task.driving.model.DriverModelAssembler;
+import com.task.driving.model.payload.CreateDriverRequest;
+import com.task.driving.model.dto.DriverDto;
+import com.task.driving.model.payload.UpdateDriverRequest;
+import com.task.driving.service.DriverService;
 import jakarta.validation.Valid;
 import lombok.AllArgsConstructor;
 import org.springframework.data.domain.Page;
@@ -16,8 +16,6 @@ import org.springframework.hateoas.PagedModel;
 import org.springframework.hateoas.server.mvc.WebMvcLinkBuilder;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.List;
 
 
 @RestController

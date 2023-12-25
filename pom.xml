@@ -9,10 +9,9 @@
 		<relativePath/>
 	</parent>
 	<groupId>com.test</groupId>
-	<artifactId>driver-student-task</artifactId>
+	<artifactId>drivers-app</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>driver-student-task</name>
-	<description>Demo project for Spring Boot</description>
+	<name>drivers-app</name>
 	<properties>
 		<java.version>17</java.version>
 		<org.mapstruct.version>1.5.5.Final</org.mapstruct.version>

@@ -1,10 +1,10 @@
-package com.test.driverstudenttask;
+package com.task;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class DriverStudentTaskApplicationTests {
+class DriversAppApplicationTests {
 
 	@Test
 	void contextLoads() {

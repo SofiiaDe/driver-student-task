@@ -1,13 +1,13 @@
-package com.test.driverstudenttask;
+package com.task;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class DriverStudentTaskApplication {
+public class DriversAppApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(DriverStudentTaskApplication.class, args);
+		SpringApplication.run(DriversAppApplication.class, args);
 	}
 
 }

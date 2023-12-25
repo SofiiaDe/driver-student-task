@@ -1,12 +1,12 @@
-package com.test.driverstudenttask.driving.service;
+package com.task.driving.service;
 
-import com.test.driverstudenttask.driving.exception.ResourceNotFoundException;
-import com.test.driverstudenttask.driving.model.dto.DriverDto;
-import com.test.driverstudenttask.driving.model.entity.Driver;
-import com.test.driverstudenttask.driving.model.mapper.DriverMapper;
-import com.test.driverstudenttask.driving.model.payload.CreateDriverRequest;
-import com.test.driverstudenttask.driving.model.payload.UpdateDriverRequest;
-import com.test.driverstudenttask.driving.repository.DriverRepository;
+import com.task.driving.exception.ResourceNotFoundException;
+import com.task.driving.model.mapper.DriverMapper;
+import com.task.driving.model.payload.CreateDriverRequest;
+import com.task.driving.repository.DriverRepository;
+import com.task.driving.model.dto.DriverDto;
+import com.task.driving.model.entity.Driver;
+import com.task.driving.model.payload.UpdateDriverRequest;
 import lombok.AllArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
