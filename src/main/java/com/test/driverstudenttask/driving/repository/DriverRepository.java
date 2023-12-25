@@ -1,4 +1,4 @@
-package com.test.driverstudenttask.repository;
+package com.test.driverstudenttask.driving.repository;
 
 import com.test.driverstudenttask.driving.model.entity.Driver;
 import org.springframework.data.jpa.repository.JpaRepository;

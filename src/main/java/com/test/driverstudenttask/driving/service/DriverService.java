@@ -1,4 +1,4 @@
-package com.test.driverstudenttask.service;
+package com.test.driverstudenttask.driving.service;
 
 import com.test.driverstudenttask.driving.model.entity.Driver;
 import java.util.List;

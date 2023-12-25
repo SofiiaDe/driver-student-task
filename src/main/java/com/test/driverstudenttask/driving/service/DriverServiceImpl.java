@@ -1,7 +1,7 @@
-package com.test.driverstudenttask.service;
+package com.test.driverstudenttask.driving.service;
 
 import com.test.driverstudenttask.driving.model.entity.Driver;
-import com.test.driverstudenttask.repository.DriverRepository;
+import com.test.driverstudenttask.driving.repository.DriverRepository;
 import java.util.List;
 import java.util.Optional;
 import lombok.AllArgsConstructor;
