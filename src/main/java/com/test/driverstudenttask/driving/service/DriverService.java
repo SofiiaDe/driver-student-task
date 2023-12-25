@@ -1,17 +1,21 @@
 package com.test.driverstudenttask.driving.service;
 
-import com.test.driverstudenttask.driving.model.entity.Driver;
-import java.util.List;
-import java.util.Optional;
+import com.test.driverstudenttask.driving.model.dto.DriverDto;
+import com.test.driverstudenttask.driving.model.payload.CreateDriverRequest;
+import com.test.driverstudenttask.driving.model.payload.UpdateDriverRequest;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 
 public interface DriverService {
 
-  List<Driver> findAll();
+    DriverDto getDriverById(Long id);
 
-  Optional<Driver> findById(Long id);
+    Page<DriverDto> getAllDrivers(Pageable pageable);
 
-  Driver save(Driver driver);
+    DriverDto createDriver(CreateDriverRequest createDriverRequest);
 
-  void deleteById(Long id);
+    DriverDto updateDriver(Long id, UpdateDriverRequest updateDriverRequest);
+
+    void deleteDriver(Long id);
 
 }
