@@ -18,7 +18,7 @@ public class Department {
         this.studentDataFormatter = studentDataFormatter;
     }
 
-    private Map<Student, Integer> getstudentGradesMap() {
+    private Map<Student, Integer> getStudentGradesMap() {
         if (studentGradesMap == null) {
             studentGradesMap = new HashMap<>();
         }
@@ -27,7 +27,7 @@ public class Department {
 
     public void addStudentGrade(Student student, Integer grade) {
         removeStudentIfLastNameExist(student.getLastName());
-        getstudentGradesMap().put(student, grade);
+        getStudentGradesMap().put(student, grade);
     }
 
     public void printAllStudentsGrades() {
@@ -36,10 +36,10 @@ public class Department {
     }
 
     private void removeStudentIfLastNameExist(String lastName) {
-        Optional<Student> optionalStudent = getstudentGradesMap().keySet().stream()
+        Optional<Student> optionalStudent = getStudentGradesMap().keySet().stream()
                 .filter(s -> s.getLastName().equals(lastName))
                 .findFirst();
-        optionalStudent.ifPresent(value -> getstudentGradesMap().remove(value));
+        optionalStudent.ifPresent(value -> getStudentGradesMap().remove(value));
     }
 
 }
