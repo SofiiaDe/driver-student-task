@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9bcc9213-add0-41b6-a029-4786d792425d" name="Changes" comment="" />
+    <list default="true" id="9bcc9213-add0-41b6-a029-4786d792425d" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drivers-app/src/main/java/com/task/DriversAppApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/drivers-app/src/main/java/com/task/driving/DriversAppApplication.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,6 +34,9 @@
       </MavenGeneralSettings>
     </option>
   </component>
+  <component name="MavenRunner">
+    <option name="jreName" value="17 (2)" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
 }</component>
@@ -49,15 +55,18 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "Spring Boot.DriverStudentTaskApplication.executor": "Run",
     "Spring Boot.DriversAppApplication.executor": "Run",
-    "git-widget-placeholder": "feature-students-app",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Sofiia/Sofiia files/Java/Projects/driver-student-task",
+    "last_opened_file_path": "C:/Users/Sofiia/Sofiia files/Java/Projects/driver-student-task/drivers-app",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.sourceCode",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.51839083",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.runner",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -68,6 +77,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Sofiia\Sofiia files\Java\Projects\driver-student-task\drivers-app\src\main\java\com\task\driving" />
       <recent name="C:\Users\Sofiia\Sofiia files\Java\Projects\driver-student-task\src\main\java\com\test\driverstudenttask\driving\model" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -82,8 +92,8 @@
   </component>
   <component name="RunManager">
     <configuration name="DriversAppApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="drivers-app" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.task.DriversAppApplication" />
+      <module name="driver-student-task" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.task.driving.DriversAppApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -106,6 +116,8 @@
       <updated>1703501473983</updated>
       <workItem from="1703501475036" duration="17197000" />
       <workItem from="1703531290621" duration="1172000" />
+      <workItem from="1703579011156" duration="1077000" />
+      <workItem from="1703580487500" duration="576000" />
     </task>
     <servers />
   </component>

@@ -15,13 +15,14 @@ import org.springframework.hateoas.EntityModel;
 import org.springframework.hateoas.PagedModel;
 import org.springframework.hateoas.server.mvc.WebMvcLinkBuilder;
 import org.springframework.http.ResponseEntity;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 
 
 @RestController
 @RequestMapping("/drivers")
 @AllArgsConstructor
-public class DriverController {
+public class DriverController extends BaseController {
 
     private DriverService driverService;
     private PagedResourcesAssembler<DriverDto> pagedResourcesAssembler;
@@ -44,11 +45,15 @@ public class DriverController {
         Page<DriverDto> drivers = driverService.getAllDrivers(pageable);
         PagedModel<EntityModel<DriverDto>> pagedModel = pagedResourcesAssembler
                 .toModel(drivers, driverModelAssembler);
-            return ResponseEntity.ok(pagedModel);
+        return ResponseEntity.ok(pagedModel);
     }
 
     @PostMapping
-    public ResponseEntity<EntityModel<DriverDto>> createDriver(@Valid @RequestBody CreateDriverRequest createDriverRequest) {
+    public ResponseEntity<?> createDriver(@Valid @RequestBody CreateDriverRequest createDriverRequest,
+                                          BindingResult bindingResult) {
+        if (bindingResult.hasErrors()) {
+            return handleValidationErrors(bindingResult);
+        }
         DriverDto driver = driverService.createDriver(createDriverRequest);
         return ResponseEntity.created(WebMvcLinkBuilder.linkTo(WebMvcLinkBuilder.methodOn(DriverController.class)
                         .getDriverById(driver.getId())).toUri())
@@ -60,8 +65,12 @@ public class DriverController {
     }
 
     @PutMapping("/{id}")
-    public ResponseEntity<EntityModel<DriverDto>> updateDriver(@PathVariable Long id,
-                                                               @Valid @RequestBody UpdateDriverRequest updateDriverRequest) {
+    public ResponseEntity<?> updateDriver(@PathVariable Long id,
+                                          @Valid @RequestBody UpdateDriverRequest updateDriverRequest,
+                                          BindingResult bindingResult) {
+        if (bindingResult.hasErrors()) {
+            return handleValidationErrors(bindingResult);
+        }
         DriverDto driver = driverService.updateDriver(id, updateDriverRequest);
         return ResponseEntity.ok(EntityModel.of(driver,
                 WebMvcLinkBuilder.linkTo(WebMvcLinkBuilder.methodOn(DriverController.class)

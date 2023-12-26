@@ -5,9 +5,11 @@ import com.task.students.utils.IStudentDataFormatter;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 import org.mockito.Mock;
+import org.mockito.junit.jupiter.MockitoExtension;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -17,6 +19,7 @@ import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
+@ExtendWith(MockitoExtension.class)
 public class DepartmentTest {
 
     private Department department;
@@ -49,18 +52,29 @@ public class DepartmentTest {
     @DisplayName("Test printAllStudentsGrades method")
     void testPrintAllStudentsGrades() {
         Student student1 = new Student("John", "Doe");
-        Student student2 = new Student("Jane", "Doe");
+        Student student2 = new Student("Jane", "Tomson");
         Integer grade1 = 90;
         Integer grade2 = 80;
-//        Map<Student, Integer> gradesMap = new HashMap<>();
-//        gradesMap.put(student1, grade1);
-//        gradesMap.put(student2, grade2);
         department.addStudentGrade(student1, grade1);
         department.addStudentGrade(student2, grade2);
         when(studentDataFormatter.format(student1)).thenReturn("John Doe");
-        when(studentDataFormatter.format(student2)).thenReturn("Jane Doe");
+        when(studentDataFormatter.format(student2)).thenReturn("Jane Tomson");
         department.printAllStudentsGrades();
         verify(iOutputter).print("John Doe: 90");
+        verify(iOutputter).print("Jane Tomson: 80");
+    }
+
+    @Test
+    @DisplayName("Test printAllStudentsGrades method when same last name")
+    void testPrintAllStudentsGradesSameLastName() {
+        Student student1 = new Student("John", "Doe");
+        Student student2 = new Student("Jane", "Doe");
+        Integer grade1 = 90;
+        Integer grade2 = 80;
+        department.addStudentGrade(student1, grade1);
+        department.addStudentGrade(student2, grade2);
+        when(studentDataFormatter.format(student2)).thenReturn("Jane Doe");
+        department.printAllStudentsGrades();
         verify(iOutputter).print("Jane Doe: 80");
     }
 
